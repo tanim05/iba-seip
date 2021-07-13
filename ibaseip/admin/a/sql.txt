@@ -1,0 +1,23 @@
+-- Indexes for table `attendance_list`
+--
+ALTER TABLE `attendance_list`
+  ADD PRIMARY KEY (`id`);
+
+
+
+--
+-- Indexes for table `attendance_record`
+--
+ALTER TABLE `attendance_record`
+  ADD PRIMARY KEY (`id`);
+
+
+-- AUTO_INCREMENT for table `attendance_list`
+--
+ALTER TABLE `attendance_list`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+-- AUTO_INCREMENT for table `attendance_record`
+--
+ALTER TABLE `attendance_record`
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

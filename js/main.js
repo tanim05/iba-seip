@@ -182,31 +182,31 @@
       var lineChartData = {
         labels: ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", ""],
         datasets: [{
-            data: [0, 5e4, 1e4, 5e4, 14e3, 7e4, 5e4, 75e3, 5e4],
-            backgroundColor: '#ff0000',
-            borderColor: '#ff0000',
-            borderWidth: 1,
-            pointRadius: 0,
-            pointBackgroundColor: '#ff0000',
-            pointBorderColor: '#ffffff',
-            pointHoverRadius: 6,
-            pointHoverBorderWidth: 3,
-            fill: 'origin',
-            label: "Total Collection"
-          },
-          {
-            data: [0, 3e4, 2e4, 6e4, 7e4, 5e4, 5e4, 9e4, 8e4],
-            backgroundColor: '#417dfc',
-            borderColor: '#417dfc',
-            borderWidth: 1,
-            pointRadius: 0,
-            pointBackgroundColor: '#304ffe',
-            pointBorderColor: '#ffffff',
-            pointHoverRadius: 6,
-            pointHoverBorderWidth: 3,
-            fill: 'origin',
-            label: "Fees Collection"
-          }
+          data: [0, 5e4, 1e4, 5e4, 14e3, 7e4, 5e4, 75e3, 5e4],
+          backgroundColor: '#ff0000',
+          borderColor: '#ff0000',
+          borderWidth: 1,
+          pointRadius: 0,
+          pointBackgroundColor: '#ff0000',
+          pointBorderColor: '#ffffff',
+          pointHoverRadius: 6,
+          pointHoverBorderWidth: 3,
+          fill: 'origin',
+          label: "Total Collection"
+        },
+        {
+          data: [0, 3e4, 2e4, 6e4, 7e4, 5e4, 5e4, 9e4, 8e4],
+          backgroundColor: '#417dfc',
+          borderColor: '#417dfc',
+          borderWidth: 1,
+          pointRadius: 0,
+          pointBackgroundColor: '#304ffe',
+          pointBorderColor: '#ffffff',
+          pointHoverRadius: 6,
+          pointHoverBorderWidth: 3,
+          fill: 'origin',
+          label: "Fees Collection"
+        }
         ]
       };
       var lineChartOptions = {
@@ -244,13 +244,13 @@
               padding: 20,
               callback: function (value) {
                 var ranges = [{
-                    divider: 1e6,
-                    suffix: 'M'
-                  },
-                  {
-                    divider: 1e3,
-                    suffix: 'k'
-                  }
+                  divider: 1e6,
+                  suffix: 'M'
+                },
+                {
+                  divider: 1e3,
+                  suffix: 'k'
+                }
                 ];
 
                 function formatNumber(n) {
@@ -309,7 +309,7 @@
           backgroundColor: ["#40dfcd", "#417dfc", "#ffaa01"],
           data: [125000, 100000, 75000, 50000, 150000],
           label: "Expenses (millions)"
-        }, ]
+        },]
       };
       var barChartOptions = {
         responsive: true,
@@ -345,13 +345,13 @@
               beginAtZero: true,
               callback: function (value) {
                 var ranges = [{
-                    divider: 1e6,
-                    suffix: 'M'
-                  },
-                  {
-                    divider: 1e3,
-                    suffix: 'k'
-                  }
+                  divider: 1e6,
+                  suffix: 'M'
+                },
+                {
+                  divider: 1e3,
+                  suffix: 'k'
+                }
                 ];
 
                 function formatNumber(n) {
@@ -396,12 +396,12 @@
     if ($("#student-doughnut-chart").length) {
 
       var doughnutChartData = {
-        labels: ["Female Students", "Male Students"],
+        labels: ["Female Participants", "Male Participants"],
         datasets: [{
           backgroundColor: ["#304ffe", "#ffa601"],
           data: [45000, 105000],
-          label: "Total Students"
-        }, ]
+          label: "Total Participants"
+        },]
       };
       var doughnutChartOptions = {
         responsive: true,
@@ -442,22 +442,22 @@
         eventLimit: true, // allow "more" link when too many events
         aspectRatio: 1.8,
         events: [{
-            title: 'All Day Event',
-            start: '2019-04-01'
-          },
+          title: 'All Day Event',
+          start: '2019-04-01'
+        },
 
-          {
-            title: 'Meeting',
-            start: '2019-04-12T14:30:00'
-          },
-          {
-            title: 'Happy Hour',
-            start: '2019-04-15T17:30:00'
-          },
-          {
-            title: 'Birthday Party',
-            start: '2019-04-20T07:00:00'
-          }
+        {
+          title: 'Meeting',
+          start: '2019-04-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2019-04-15T17:30:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2019-04-20T07:00:00'
+        }
         ]
       });
     }
