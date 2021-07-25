@@ -1,5 +1,3 @@
 <?php
 // 301 Moved Permanently
-header("Location: http://localhost/ibaseip/admin/login.php", true, 301);
-exit();
-?>
+header("Location: http://localhost/iba-seip/ibaseip/admin/login.php", true, 301);
