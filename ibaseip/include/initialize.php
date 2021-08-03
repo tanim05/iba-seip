@@ -33,6 +33,7 @@ require_once(LIB_PATH.DS."ay.php");
 require_once(LIB_PATH.DS."exam.php");
 require_once(LIB_PATH.DS."percent.php");
 require_once(LIB_PATH.DS."grade.php");
+require_once(LIB_PATH.DS."intake.php");
 
 require_once(LIB_PATH.DS."database.php");
 ?>
